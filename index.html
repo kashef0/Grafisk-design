@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" alt="world wide icon" href="bilder/favicon2.png" />
+    <title>WORLD WIDE</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><a href=""><img src="bilder/newslogo.svg" alt="World wide logo"></a></h1>
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <nav id="nav-menu">
+            <button class="menu-btn clase" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">stäng</span>
+            </button>
+            <ul>
+                <li><a href="#">Startsida</a></li>
+                <li><a href="#">Om oss</a></li>
+                <li><a href="#">Nyheter</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="backgound-img">
+            <picture>
+                <source srcset="/bilder/stor_bild.jpg" media="(min-width: 1521px)">
+                <source srcset="/bilder/mellan_bild.jpg" media="(min-width: 1000px)">
+                <img src="bilder/liten_bild.jpg" alt="leccojjön med utsikt över bergen">
+            </picture>
+        </section>
+        <section id="main-img">
+            <picture class="cupe">
+                <a><img src="bilder/frilaggning01.png" alt=""></a>
+            </picture>
+            <picture class="cupe">
+                <a><img src="bilder/frilaggning02.png" alt=""></a>
+            </picture>
+            <picture class="cupe">
+                <a><img src="bilder/frilaggning03.png" alt=""></a>
+            </picture>
+        </section>
+        <section id="shadow-image">
+            <article class="picture-info">
+                <h1>
+                    World Wide
+                </h1>
+                <p>Du kan hitta här allt du vill om resor och bildar</p>
+                <button class="btn">Sök här</button>
+            </article>
+        </section>
+        <section id="gif-section">
+            <section class="under-section">
+                <picture class="gif">
+                    <img src="bilder/final-gif.gif" alt="">
+                </picture>
+                <!-- <picture class="gif-logo">
+                    <img src="bilder/gif_logo.gif" alt="">
+                </picture>
+                <picture class="gif">
+                    <img src="bilder/reklam_banner.gif" alt="">
+                </picture> -->
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section id="foot">
+            <h5>Laborationsuppgift för kursen DT200G, Grafisk design för webb.</h5>
+            <p>© Copyright För och efternamn, 2023</p>
+        </section>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
