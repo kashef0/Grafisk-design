@@ -155,7 +155,7 @@ h2 {
     background-color: #F2F5EA;
 }
 
-#main-img h2 {
+#main-img h1 {
     display: flex;
     width: 100%;
     height: auto;
@@ -164,6 +164,7 @@ h2 {
     color: #E75A7C;
     font-family: var(--RobotBold-fontFamily);
     font-weight: 700;
+    font-size: 2em;
 }
 
 #main-img article {
@@ -174,6 +175,10 @@ h2 {
     display: flex;
     justify-content: center;
     padding: 20px;
+}
+
+#main-img article h4 {
+    font-size: 1.5em;
 }
 
 
@@ -200,7 +205,11 @@ footer {
 }
 #foot {
     padding: 15px;
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 700;
+    color: #2C363F;
 }
+
 #foot p {
     justify-content: center;
     padding-left: 50px;

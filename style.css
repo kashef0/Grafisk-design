@@ -122,9 +122,10 @@ article {
     background-color: #F2F5EA;    
 } 
 
-article h2 {
+article h1 {
     color: #E75A7C;
     font-family: var(--RobotBold-fontFamily);
+    font-size: 2.5em;
 }
 
 main {
@@ -181,7 +182,7 @@ h2 {
     height: 25rem;
     display: flex;
     background-color: #BBC7A4;
-    opacity: 0.8;
+    opacity: 0.6;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -216,7 +217,7 @@ h2 {
 }
 
 #shadow-image .picture-info .btn:hover {
-    background-color: rgb(63, 124, 104);
+    background-color: #454d38;
 }
 
 #gif-section {
@@ -257,13 +258,15 @@ footer {
 }
 #foot {
     padding: 15px;
-    font-family: var(--Robot-fontfamily);
-    font-weight: 400;
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 700;
+    color: #2C363F;
 }
 #foot p {
     justify-content: center;
     padding-left: 50px;
-    color: #2C363F;
+    font-family: var(--Robot-fontfamily);
+    font-weight: 400;
 }
 
 @media only screen and (min-width: 992px) {

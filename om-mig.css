@@ -49,7 +49,7 @@ nav li {
 }
 
 nav a {
-    color: rgb(0, 0, 0);
+    color: #2C363F;
     text-decoration: none;
     padding: 0 1em;
     font-family: var(--RobotBold-fontFamily);
@@ -66,7 +66,7 @@ nav li:hover {
     align-items: center;
     padding: 8px 15px;
     background-color: #BBC7A4;
-    border: rgb(0, 0, 0) solid 2px;
+    border: #2C363F solid 2px;
     cursor: pointer;
     font-family: var(--RobotBold-fontFamily);
     font-weight: 700;
@@ -89,13 +89,13 @@ nav li:hover {
     display: block;
     width: 20px;
     height: 3px;
-    background-color: rgb(0, 0, 0);
+    background-color: #2C363F;
     margin: 5px 0;
 }
 
 .menu-text {
     font-size: 1.2em;
-    color: rgb(0, 0, 0);
+    color: #2C363F;
 }
 
 .cross1 {
@@ -225,10 +225,16 @@ footer {
 }
 #foot {
     padding: 15px;
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 700;
+    color: #2C363F;
 }
+
 #foot p {
     justify-content: center;
     padding-left: 50px;
+    font-family: var(--Robot-fontfamily);
+    font-weight: 400;
 }
 
 
