@@ -2,6 +2,12 @@
     margin: 0;
 }
 
+:root {
+    --RobotBold-fontFamily: 'Roboto', sans-serif;
+    --Robot-fontfamily: 'Source Sans 3', sans-serif;
+}
+
+
 header {
     margin: 0;
     position: relative;
@@ -9,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(119, 24, 24);
+    background-color: #BBC7A4;
 }
 
 .logo a {
@@ -20,7 +26,7 @@ header {
 }
 
 nav {
-    background-color: rgb(119, 24, 24);
+    background-color: #BBC7A4;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 71);
     font-size: 1.4em;
     position: absolute;
@@ -45,13 +51,16 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: #2C363F;
     text-decoration: none;
     padding: 0 1em;
+    color: #2C363F;
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 700;
 }
 
 nav li:hover {
-    background-color: rgb(94, 15, 15);
+    background-color: #F2F5EA;
     cursor: pointer;
 }
 
@@ -59,8 +68,8 @@ nav li:hover {
     display: flex;
     align-items: center;
     padding: 8px 15px;
-    background-color: rgb(119, 24, 24);
-    border: white solid 2px;
+    background-color: #BBC7A4;
+    border: #2C363F solid 2px;
     cursor: pointer;
 }
 
@@ -69,7 +78,7 @@ nav li:hover {
 }
 
 .menu-btn:hover {
-    background-color: rgb(94, 24, 24);
+    background-color: #F2F5EA;
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
 }
 
@@ -81,13 +90,15 @@ nav li:hover {
     display: block;
     width: 20px;
     height: 3px;
-    background-color: white;
+    background-color: #2C363F;
     margin: 5px 0;
 }
 
 .menu-text {
     font-size: 1.2em;
-    color: white;
+    color: #2C363F;
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 700;
 }
 
 .cross1 {
@@ -115,9 +126,8 @@ main {
 }
 .backgound-img picture img {
     width: 100%;
-    height: 415px;
-
 }
+
 h1 img {
     max-width: 250px;
     border-radius: 5%;
@@ -129,7 +139,6 @@ h1 img {
 
 h2 {
     max-width: 100%;
-    height: 415px;
     top: 81px;
     background-position: center;
     background-size: cover;
@@ -153,10 +162,14 @@ h2 {
     justify-content: center;
     padding: 50px 0px 40px 0px;
     color: #E75A7C;
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 700;
 }
 
 #main-img article {
     color: #E75A7C;
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 700;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -191,6 +204,9 @@ footer {
 #foot p {
     justify-content: center;
     padding-left: 50px;
+    font-family: var(--Robot-fontfamily);
+    font-weight: 400;
+    color: #2C363F;
 }
 
 

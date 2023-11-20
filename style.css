@@ -2,6 +2,11 @@
     margin: 0;
 }
 
+:root {
+    --RobotBold-fontFamily: 'Roboto', sans-serif;
+    --Robot-fontfamily: 'Source Sans 3', sans-serif;
+}
+
 header {
     margin: 0;
     position: relative;
@@ -9,7 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(119, 24, 24);
+    background-color: #BBC7A4;
 }
 
 .logo a {
@@ -20,7 +25,7 @@ header {
 }
 
 nav {
-    background-color: rgb(119, 24, 24);
+    background-color: #BBC7A4;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 71);
     font-size: 1.4em;
     position: absolute;
@@ -45,13 +50,15 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: #2C363F;
     text-decoration: none;
     padding: 0 1em;
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 700;
 }
 
 nav li:hover {
-    background-color: rgb(94, 15, 15);
+    background-color: #F2F5EA;
     cursor: pointer;
 }
 
@@ -59,8 +66,8 @@ nav li:hover {
     display: flex;
     align-items: center;
     padding: 8px 15px;
-    background-color: rgb(119, 24, 24);
-    border: white solid 2px;
+    background-color: #BBC7A4;
+    border: rgb(0, 0, 0) solid 2px;
     cursor: pointer;
 }
 
@@ -69,7 +76,7 @@ nav li:hover {
 }
 
 .menu-btn:hover {
-    background-color: rgb(94, 24, 24);
+    background-color: #F2F5EA;
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
 }
 
@@ -81,13 +88,15 @@ nav li:hover {
     display: block;
     width: 20px;
     height: 3px;
-    background-color: white;
+    background-color: #2C363F;
     margin: 5px 0;
 }
 
 .menu-text {
     font-size: 1.2em;
-    color: white;
+    color: #2C363F;
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 700;
 }
 
 .cross1 {
@@ -115,6 +124,7 @@ article {
 
 article h2 {
     color: #E75A7C;
+    font-family: var(--RobotBold-fontFamily);
 }
 
 main {
@@ -128,8 +138,6 @@ main {
 }
 .backgound-img picture img {
     width: 100%;
-    height: 415px;
-
 }
 h1 img {
     max-width: 250px;
@@ -142,7 +150,6 @@ h1 img {
 
 h2 {
     max-width: 100%;
-    height: 415px;
     top: 81px;
     background-position: center;
     background-size: cover;
@@ -182,15 +189,20 @@ h2 {
 }
 #shadow-image .picture-info h1 {
     padding: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--RobotBold-fontFamily);
     font-size: 32px;
+    color: white;
     font-weight: 700;
+
 }
 #shadow-image .picture-info p {
     padding: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--RobotBold-fontFamily);
     font-size: 20px;
     letter-spacing: 0.5px;
+    color: white;
+    opacity: 1;
+    font-weight: 700;
 }
 #shadow-image .picture-info .btn {
     width: 10rem;
@@ -198,6 +210,9 @@ h2 {
     border-radius: 7px;
     background-color: inherit;
     cursor: pointer;
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 700;
+    color: white;
 }
 
 #shadow-image .picture-info .btn:hover {
@@ -242,10 +257,13 @@ footer {
 }
 #foot {
     padding: 15px;
+    font-family: var(--Robot-fontfamily);
+    font-weight: 400;
 }
 #foot p {
     justify-content: center;
     padding-left: 50px;
+    color: #2C363F;
 }
 
 @media only screen and (min-width: 992px) {
