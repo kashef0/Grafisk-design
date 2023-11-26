@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" alt="world wide icon" href="bilder/favicon2.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,700;0,900;1,100;1,300&family=Source+Sans+3:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>WORLD WIDE</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo"><a href="index.html"><img src="bilder/logo.svg" alt="World wide logo"></a></h1>
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <nav id="nav-menu">
+            <button class="menu-btn clase" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">stäng</span>
+            </button>
+            <ul>
+                <li><a href="#">Startsida</a></li>
+                <li><a id="section1" href="#section2">Om oss</a></li>
+                <li><a href="#">Utbildningar</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="home">
+            <video muted loop autoplay>
+                <source src="video/video3.mp4" type="video/mp4">
+            </video>
+            <section class="home-content">
+                <h1>ITALY</h1>
+                <p>Leccosjön</p>
+                <button>EXPLORE THE WORLD</button>
+            </section>
+        </article>
+        <!-- <article class="main-picture">
+            <section class="backgound-img">
+                <video autoplay muted loop id="myVideo">
+                    <source src="video/video2.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </section>
+            <section>
+                <h1>Välkomna till italy</h1>
+            </section>
+        </article> -->
+        <article class="row">
+            <section class="first-text">
+                <section class="text-holder">
+                    <h1>Webbutvecklings Program</h1>
+                </section>
+            </section>
+            <article class="column">
+                <figure class="content">
+                    <img src="bilder/marie.jpg" title="Marie Francesca Michl" alt="bild på Marie Francesca Michl">
+                    <figcaption>
+                        <h3>webbutveckling och E-handelsindustrin i Sverige</h3>
+                        <p>
+                            Den växande expansionen av e-handelsindustrin i Sverige har lett till en stor efterfrågan på erfarna webbutvecklare
+                            på arbetsmarknaden. <cite>"Branschen bedöms växa med 20 procent närmsta åren och behovet av webbutvecklare är
+                                stort."</cite>
+                            Enligt Marie Francesca Michl som är expert på arbetsförmarknaden och Detta beror på flera faktorer som drivs av den
+                            ständigt ökande digitaliseringen och det ökade
+                            antalet företag som väljer att skapa eller expandera sin närvaro online. <span id="dots"></span><span id="more"> Och
+                                det är därför kommer Mittuniversitetets distansutbildning att ge möjlighet till en intensiv och heltäckande kurs
+                                under två år utbildningen riktar sig till personer med intresse för teknik och fokuserar på att utveckla såväl
+                                teoretiska som praktiska kunskaper inom modern webbutveckling
+                            </span><a onclick="myFunction()" id="myBtn">Läs mer...</a></span>
+                        </p>
+                    </figcaption>
+                </figure>
+            </article>
+            <a id="section2" href="#section1"></a>
+            <article class="second-text">
+                <section class="seconText-holder">
+                    <h3>Om universitetet </h3>
+                    <p>
+                        Mittuniversitetet är ett svenskt statligt universitet. Lärosätet är beläget i Mittsverigeregionen (Mellannorrland)
+                        kring Sveriges geografiska mittpunkt, med campus på två orter: Sundsvall och Östersund. Verksamheten vid campus
+                        Härnösand omlokaliserades till Sundsvall inför höstterminen 2016.
+                    </p>
+                </section>
+            </article>
+            <article class="column">
+                <figure class="content">
+                    <figcaption>
+                        <section class="figcaption">
+                            <h3>Webbanvändbarhet och Tekniska Färdigheter</h3>
+                            <p>Utbildningen tar upp de senaste trenderna inom webbutveckling
+                                Praktisk erfarenhet med användargenererat innehåll betonas, likt Wikipedia
+                                Kursinnehållet inkluderar moderna ramverk och följande Programmeringsspråk;
+                            </p>
+                            <ul>
+                                <li>Html</li>
+                                <li>Css</li>
+                                <li>Javascript</li>
+                                <li>Node</li>
+                                <li>PHP</li>
+                                <li>C#</li>
+                                <li>ASP</li>
+                                <li>.NET</li>
+                            </ul>
+                        </section>
+                    </figcaption>
+                    <img src="bilder/CF017374.jpg" title="två personer, en man och en kvinna som sitter på varsin stol med två datorer framför dem" alt="två personer, en man och en kvinna som sitter på varsin stol med två datorer framför dem">
+                </figure>
+            </article>
+            <article id="column-one" class="column">
+                <figure class="content-two last-img">
+                    <img src="bilder/CF017230.jpg" title="två personer, en man och en kvinna som sitter på varsin stol och diskuterar" alt="två personer, en man och en kvinna som sitter på varsin stol och diskuterar">
+                    <figcaption>
+                        <h3>Om programmet</h3>
+                        <p class="thirdText">
+                            Programmet fokuserar på kurser som bygger på projektarbete och främjar samarbete i grupper där medlemmarna har olika
+                            kunskapsnivåer inom modellering och implementering <span id="dots1"></span><span id="more1"> och samtidigt kommer du
+                                att lära dig Under utbildningen viktiga delar inom webbanvändbarhet som stöd till den gedigna teknikkunskap du
+                                får för att utveckla och administrera framtidens webbplatser och funktionalitet. Syftet med dessa projekt är
+                                inte bara att utveckla individuella
+                                färdigheter utan också att främja effektiv kommunikation, vilket är en mycket eftertraktad kompetens hos
+                                arbetsgivare. Utbildningen erbjuds helt online utan fysiska möten på campus, och den kräver ett
+                                heltidsengagemang på
+                                minst 40 timmar per vecka. Föreläsningarna hålls under dagtid, men det finns också möjlighet att titta på
+                                inspelade
+                                föreläsningar i efterhand </span><a onclick="readMoreText()" id="myBtn1">Läs mer...</a>
+                        </p>
+                        <p class="thirdText">
+                            Efter avslutade studier kommer du att ha en examen på högskolenivå med inriktning mot datateknik, vilket motsvarar
+                            en diplomexamen inom högre utbildning med specialisering inom datateknik.
+                        </p>
+                    </figcaption>
+                </figure>
+            </article>
+        </article>    
+    </main>
+    <footer>
+        <section id="foot">
+            <h5>Laborationsuppgift moment 2.2 för kursen DT068G, Webbanvändbarhet.</h5>
+            <p>© Copyright Mohamed Abokashef, 2023</p>
+        </section>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -116,7 +116,7 @@ nav li:hover {
 article {
     
     padding: 40px;
-    height: 20px;
+    height: auto;
     display: flex;
     justify-content: center;
     background-color: #F2F5EA;    
@@ -172,14 +172,13 @@ h2 {
 }
 #shadow-image {
     width: 100%;
-    height: 30rem;
     background-image: url(bilder/background.jpg);
     background-size: 100% 100%;
     background-position: center;
     object-fit: cover;
 }
 #shadow-image .picture-info {
-    height: 25rem;
+    height: 30vw;
     display: flex;
     background-color: #BBC7A4;
     opacity: 0.6;
@@ -222,7 +221,6 @@ h2 {
 
 #gif-section {
     width: 100%;
-    height: 300px;
     padding: 60px 0px 60px 0px;
     display: flex;
     justify-content: center;
@@ -231,7 +229,7 @@ h2 {
     
 }
 #gif-section .under-section {
-    width: 65%;
+    width: 40%;
     display: flex;
     
     justify-content: space-around;
@@ -244,7 +242,7 @@ h2 {
 
 #gif-section .gif img{
     width: 100%;
-    height: 300px;
+    
 }
 #gif-section .gif-logo img {
     width: 100%;
@@ -310,4 +308,10 @@ footer {
     #main-img {
         flex-wrap: wrap;
     }
+
+    #shadow-image .picture-info {
+        height: auto;
+    }
+
+    
 }
