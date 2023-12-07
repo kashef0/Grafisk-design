@@ -63,9 +63,13 @@ function readMoreText() {
 }
 
 
-let video = document.getElementById("myVideo");
-let btn = document.getElementById("myBtn");
-function myFunction() {
+
+
+
+
+function btnVideoPlayer() {
+    let btn = document.getElementById("playBtn");
+    let video = document.getElementById("myVideo");
     if (video.paused) {
         video.play();
         btn.innerHTML = "Pause";

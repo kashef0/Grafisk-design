@@ -23,7 +23,7 @@ video {
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 .home-content {
     position: relative;
@@ -32,7 +32,7 @@ video {
     text-align: center;
 }
 .home-content h1 {
-    font-family: Playfair Display, serif;
+    font-family: serif;
     font-size: clamp(45px, 7vw, 130px);
     line-height: 1.1;
 }
@@ -54,14 +54,40 @@ video {
     cursor: pointer;
 }
 
+.Leccosjön {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.Leccosjön h2 {
+    font-size: 2em;
+    font-family: var(--Robot-fontfamily);
+    font-weight: 500;
+}
+
+.Leccosjön p {
+    font-size: clamp(16px, 1em, 30px);
+    font-family: var(--latoFont-family);
+}
 
 
-
-
-
-
-
-
+#playBtn {
+    width: 200px;
+    font-size: 10px;
+    padding: 10px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);  
+    color: #fff;
+    cursor: pointer;
+}
+#playBtn:hover {
+    background: #ddd;
+    color: black;
+}
 
 
 header {
@@ -81,6 +107,11 @@ header {
     text-decoration: none;
 }
 
+.logo img {
+    display: flex;
+    align-items: center;
+}
+
 nav {
     background-color: #072E33;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 71);
@@ -88,8 +119,9 @@ nav {
     position: absolute;
     right: 0;
     top: 0;
-    height: 100vh;
+    height: 80vh;
     width: 250px;
+    z-index: 1;
     display: none;
 }
 
@@ -210,7 +242,14 @@ nav li:hover {
     display: flex;
 }
 
-.first-text {
+.content-two iframe {
+    max-width: 800px;
+    width: 100%;
+    height: 445px;
+    max-height: 400px;
+}
+
+/* .first-text {
     width: 100%;
     background-color: white;
     display: flex;
@@ -239,11 +278,10 @@ cite {
     letter-spacing: 0.02em;
     font-weight: 700;
     
-}
+} */
 
 p {
     line-height: 1.4em;
-    font-style: italic;
     font-size: 1.2em;
     font-family: var(--latoFont-family);
     font-weight: 400;
@@ -251,7 +289,7 @@ p {
     letter-spacing: 0.02em;
 }
 
-.second-text {
+/* .second-text {
     width: 100%;
     background-color: white;
     display: flex;
@@ -267,16 +305,10 @@ p {
     flex-direction: column;
     justify-content: center;
     opacity: 0.8;
-}
+} */
 
-h3 {
-    font-family: var(--RobotBold-fontFamily);
-    font-size: 1.5em;
-    font-weight: 700;
-    
-}
 
-.seconText-holder h3 {
+/* .seconText-holder h3 {
     padding: 15px;
     font-size: 1.5em;
     font-weight: 700;
@@ -292,7 +324,7 @@ h3 {
     text-align: justify;
     letter-spacing: 0.01em;
     
-}
+} */
 
 #myBtn1 {
     color: rgb(220, 72, 72);
@@ -319,6 +351,7 @@ h3 {
     width: 50%;
     justify-content: space-around;
     background-color: white;
+    margin: 30px 0px;
 }
 
 #column-one .last-img img {
@@ -329,7 +362,7 @@ h3 {
 figcaption {
     background-color: ghostwhite;
     width: auto;
-    padding: 70px 70px 70px 70px;
+    padding: 30px 70px 30px 70px;
 }
 
 figcaption h3 {
@@ -338,9 +371,9 @@ figcaption h3 {
     font-weight: 700;
 }
 
-figcaption p {
+/* figcaption p {
     letter-spacing: 0.01em;
-}
+} */
 
 figcaption ul {
     font-family: var(--RobotBold-fontFamily);
@@ -348,12 +381,12 @@ figcaption ul {
     line-height: 1.3em;
 }
 
-#pesonal-image {
+/* #pesonal-image {
     width: 100%;
     display: flex;
     justify-content: center;
     
-}
+} */
 
 .content-one {
     width: 70%;
@@ -361,6 +394,17 @@ figcaption ul {
     flex-direction: column;
     background-color: white;
     padding: 10px;
+}
+
+.list {
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 600;
+    line-height: 1.3em;
+    padding: 10px 0px 20px 40px;
+}
+
+.list li {
+    font-family: var(--RobotBold-fontFamily);
 }
 
 
@@ -379,12 +423,18 @@ footer {
     font-weight: 700;
     color: white;
 }
+
+#foot h5 {
+    padding-top: 10px;
+}
 #foot p {
     justify-content: center;
     padding-left: 50px;
     font-family: var(--Robot-fontfamily);
     font-weight: 400;
+    padding-bottom: 0;
 }
+
 
 
 #more { 
