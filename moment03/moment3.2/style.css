@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 1600px;
+}
+body {
+    background-color: #f1f1f1;
+    font-family: Arial;
+}
+
+:root {
+    --latoFont-family: 'Lato', sans-serif;
+    --RobotBold-fontFamily: 'Roboto', sans-serif;
+    --Robot-fontfamily: 'Source Sans 3', sans-serif;
+}
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    filter: opacity(0.4);
+}
+
+
+header {
+    margin: 0;
+    position: relative;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #072E33;
+    z-index: 1;
+}
+
+.logo a {
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    margin: 0;
+    text-decoration: none;
+}
+
+.logo img {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background-color: #072E33;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 71);
+    font-size: 1.4em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: auto;
+    width: 250px;
+    z-index: 1;
+    display: none;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    margin: 0.8em 0;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1em;
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 700;
+}
+
+nav li:hover {
+    background-color: #F2F5EA54;
+    cursor: pointer;
+}
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #0F969C;
+    border: rgb(0, 0, 0) solid 2px;
+    cursor: pointer;
+}
+
+.open {
+    margin: 0 1em;
+}
+
+.menu-btn:hover {
+    background-color: #F2F5EA;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+.bars {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #2C363F;
+    margin: 5px 0;
+}
+
+.menu-text {
+    font-size: 1.2em;
+    color: #2C363F;
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 700;
+}
+
+.cross1 {
+    width: 25px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+}
+
+.cross2 {
+    width: 25px;
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;
+}
+
+
+
+
+
+
+p {
+    line-height: 1.4em;
+    font-size: 1.2em;
+    font-family: var(--Robot-fontfamily);
+    font-weight: 400;
+    padding-bottom: 20px;
+    letter-spacing: 0.02em;
+}
+
+
+#myBtn1 {
+    color: rgb(220, 72, 72);
+    font-size: 1em;
+    font-family: var(--latoFont-family);
+    cursor: pointer;
+}
+
+.content img {
+    width: 40%;
+}
+
+#column-one {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    opacity: 0.8;
+    justify-content: space-around;
+}
+
+.last-img {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 50%;
+    justify-content: space-around;
+    background-color: white;
+    margin: 30px 0px;
+}
+
+#column-one .last-img img {
+    width: 100%;
+}
+
+
+figcaption {
+    background-color: ghostwhite;
+    width: auto;
+    padding: 30px 70px 30px 70px;
+}
+
+figcaption h3 {
+    padding-bottom: 10px;
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 700;
+}
+
+/* figcaption p {
+    letter-spacing: 0.01em;
+} */
+
+figcaption ul {
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+
+
+.content-one {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+}
+
+.list {
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 600;
+    line-height: 1.3em;
+    padding: 10px 0px 20px 40px;
+}
+
+.list li {
+    font-family: var(--RobotBold-fontFamily);
+}
+
+
+/* Responsiv layout - gör en layout med två kolumner istället för fyra kolumner */
+
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #072E33;
+    position: relative;
+    z-index: 1;
+}
+#foot {
+    padding: 15px;
+    font-family: var(--RobotBold-fontFamily);
+    font-weight: 700;
+    color: white;
+}
+
+#foot h5 {
+    padding-top: 10px;
+}
+#foot p {
+    justify-content: center;
+    padding-left: 50px;
+    font-family: var(--Robot-fontfamily);
+    font-weight: 400;
+    padding-bottom: 0;
+}
+
+
+
+#more { 
+    display: none;
+}
+
+#more1 { 
+    display: none;
+}
+
+#myBtn {
+    color: rgb(220, 72, 72);
+    font-size: 1em;
+    font-family: var(--latoFont-family);
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) {
+    header {
+        padding: 0 3em;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    #open-menu {
+        display: none !important;
+    }
+    /* header {
+        position: static;
+    } */
+
+    nav {
+        display: block !important;
+        position: static;
+        box-shadow: 0 0px 0px;
+        right: 0;
+        top: 0;
+        height: auto;
+        font-size: 1.4em;
+        width: auto;
+    }
+
+    nav ul {
+        height: 100%;
+    }
+    nav li {
+        display: inline;
+        padding: 1.2em 0;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #main-img {
+        flex-wrap: wrap;
+    }
+
+    figcaption {
+        padding: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .last-img {
+        width: 80%;
+    }
+    .seconText-holder {
+        width: 70%;
+    }
+}
+
+/* Responsiv layout - gör att de två kolumnerna staplas ovanpå varandra istället för bredvid varandra*/
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+    #column-one .last-img img {
+        width: 100%;
+    }
+
+    .seconText-holder {
+        width: 100%;
+        padding: 20px;
+    }
+
+    figcaption {
+        padding: 10px;
+    }
+    
+}

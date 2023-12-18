@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="bilder/favicon2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,700;0,900;1,100;1,300&family=Source+Sans+3:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>WORLD WIDE</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-section">
+            <h1 class="logo"><a href="index.html"><img src="bilder/logo.svg" alt="World wide logo"></a></h1>
+            <form class="lang-switcher">
+                <label for="lang-switch">
+                    <a class="earth-icon" href="#"><i class="fa-light fa-globe fa-beat-fade"></i></a>
+                </label>
+                <select id="lang-switch">
+                    <option value="sv" selected>Sv</option>
+                    <option value="en">En</option>
+                </select>
+            </form>
+        </section>
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <nav id="nav-menu">
+            <button class="menu-btn clase" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">stäng</span>
+            </button>
+            <ul>
+                <li><a href="#">Startsida</a></li>
+                <li><a id="section1" href="#section2">Om oss</a></li>
+                <li><a href="#">Utbildningar</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <figure class="slideshow-container">
+            <section class="mySlides fade">
+                <h5 class="numbertext">1 / 3</h5>
+                <img src="bilder/New1.webp">
+                <figcaption class="text">Pålitlig transport till och från flygplatser</figcaption>
+            </section>
+        
+            <section class="mySlides fade">
+                <h5 class="numbertext">2 / 3</h5>
+                <img src="bilder/New2.webp">
+                <figcaption class="text">Utforska staden med lätthet och bekvämlighet</figcaption>
+            </section>
+        
+            <section class="mySlides fade">
+                <h5 class="numbertext">3 / 3</h5>
+                <img src="bilder/New3.webp">
+                <figcaption class="text">Vi tar dig till och från evenemang och fester</figcaption>
+            </section>
+            
+            <button type="button" aria-label="preveuos image" class="prev" onclick="plusSlides(-1)">❮</button>
+            <button type="button" aria-label="next image" class="next" onclick="plusSlides(1)">❯</button>
+        
+        </figure>
+        <section class="treDots">
+            <span class="point" onclick="currentSlide(1)"></span>
+            <span class="point" onclick="currentSlide(2)"></span>
+            <span class="point" onclick="currentSlide(3)"></span>
+        </section>
+        <article class="row">
+                <section id="search">
+                    <form class="search-engine">
+                        <input type="text" placeholder="Search..." name="search">
+                        <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </section>
+            <article class="column column-main">
+                <figure class="content content-main">
+                    <img src="bilder/mellan-img.jpg" title="Marie Francesca Michl" alt="bild på Marie Francesca Michl">
+                    <figcaption>
+                        <h2>Webbutveckling och E-handelsindustrin i Sverige</h2>
+                        <p>
+                            Den växande expansionen av e-handelsindustrin i Sverige har lett till en stor efterfrågan på erfarna webbutvecklare
+                            på arbetsmarknaden. <cite>"Branschen bedöms växa med 20 procent närmsta åren och behovet av webbutvecklare är
+                                stort."</cite>
+                            Enligt arbetsförmarknaden och Detta beror på flera faktorer som drivs av den
+                            ständigt ökande digitaliseringen och det ökade
+                            antalet företag som väljer att skapa eller expandera sin närvaro online.<span id="dots"></span><span id="more">
+                                Det är därför kommer Mittuniversitetets distansutbildning att ge möjlighet till en intensiv och heltäckande kurs
+                                under två år utbildningen riktar sig till personer med intresse för teknik och fokuserar på att utveckla såväl
+                                teoretiska som praktiska kunskaper inom modern webbutveckling. <cite>"Webbutveckling är den perfekta balansen mellan logik och kreativitet". - Marie Francesca Michl </cite>
+                            </span><button onclick="myFunction()" id="myBtn" class="MyBtn" aria-label="Läs mer om Webbutveckling och E-handelsindustrin">Läs mer...</button>
+                        </p>
+                    </figcaption>
+                </figure>
+            </article>
+            <a id="section2" href="#section1" aria-hidden="true"></a>
+            <!-- <article class="second-text"> -->
+                <section class="seconText-holder">
+                    <h2>Om universitetet </h2>
+                    <p>
+                        Mittuniversitetet är ett svenskt statligt universitet. Lärosätet är beläget i Mittsverigeregionen (Mellannorrland)
+                        kring Sveriges geografiska mittpunkt, med campus på två orter: Sundsvall och Östersund. Verksamheten vid campus
+                        Härnösand omlokaliserades till Sundsvall inför höstterminen 2016.
+                    </p>
+                </section>
+            <!-- </article> -->
+            <article class="column column-main">
+                <figure class="content content-main">
+                    <figcaption class="new-order">
+                        <!-- <section class="figcaption"> -->
+                            <h2>Webbanvändbarhet och Tekniska Färdigheter</h2>
+                            <p>Utbildningen tar upp de senaste trenderna inom webbutveckling
+                                Praktisk erfarenhet med användargenererat innehåll betonas, likt Wikipedia
+                                Kursinnehållet inkluderar moderna ramverk och följande Programmeringsspråk;
+                            </p>
+                            <ul>
+                                <li>Html</li>
+                                <li>Css</li>
+                                <li>Javascript</li>
+                                <li>Node</li>
+                                <li>PHP</li>
+                                <li>C#</li>
+                                <li>ASP</li>
+                                <li>.NET</li>
+                            </ul>
+                            <p>
+                                Du får också skapa och konsumera webbtjänster samt lära dig att utveckla med webbaserade innehållssystem (CMS).
+                            </p>
+                        <!-- </section> -->
+                    </figcaption>
+                    <img src="bilder/CF017230.jpg" title="två personer, en man och en kvinna som sitter på varsin stol och diskuterar" alt="två personer, en man och en kvinna som sitter på varsin stol och diskuterar">
+                </figure>
+            </article>
+            <article id="column-one" class="column">
+                <figure class="content-two last-img">
+                    <img src="bilder/CF017374.jpg" title="två personer, en man och en kvinna som sitter på varsin stol med två datorer framför dem" alt="två personer, en man och en kvinna som sitter på varsin stol med två datorer framför dem">
+                    <figcaption class="last-text">
+                        <h2>Om programmet</h2>
+                        <p class="thirdText">
+                            Programmet fokuserar på kurser som bygger på projektarbete och främjar samarbete i grupper där medlemmarna har olika
+                            kunskapsnivåer inom modellering och implementering<span id="dots1"></span><span id="more1"> och samtidigt kommer du
+                                att lära dig Under utbildningen viktiga delar inom webbanvändbarhet som stöd till den gedigna teknikkunskap du
+                                får för att utveckla och administrera framtidens webbplatser och funktionalitet. Syftet med dessa projekt är
+                                inte bara att utveckla individuella
+                                färdigheter utan också att främja effektiv kommunikation, vilket är en mycket eftertraktad kompetens hos
+                                arbetsgivare. Utbildningen erbjuds helt online utan fysiska möten på campus, och den kräver ett
+                                heltidsengagemang på
+                                minst 40 timmar per vecka. Föreläsningarna hålls under dagtid, men det finns också möjlighet att titta på
+                                inspelade
+                                föreläsningar i efterhand </span><button onclick="readMoreText()" id="myBtn1" class="MyBtn" aria-label="Läs mer om webbutvecklingsprogrammet">Läs mer...</button>
+                        </p>
+                        <p class="thirdText">
+                            Efter avslutade studier kommer du att ha en examen på högskolenivå med inriktning mot datateknik, vilket motsvarar
+                            en diplomexamen inom högre utbildning med specialisering inom datateknik.
+                        </p>
+                    </figcaption>
+                </figure>
+            </article>
+        </article>    
+    </main>
+    <aside id="eight">
+        <article class="containerEight">
+            <section class="topContent">
+                <figure class="logoInfo">
+                    <a class="logo_name"><img src="" alt="logo"></a>
+                </figure>
+                <section class="socialMedia-icons">
+                    <a href="#" aria-label="Facebook"><img src="/Webbutvelking/new-test/media icons/icons8-facebook-48.png" alt="facebook"></a>
+                    <a href="#" aria-label="Facebook"><img src="/Webbutvelking/new-test/media icons/icons8-twitterx-48.png" alt=""></a>
+                    <a href="#" aria-label="Facebook"><img src="/Webbutvelking/new-test/media icons/icons8-instagram-48.png" alt=""></a>
+                    <a href="#" aria-label="Facebook"><img src="/Webbutvelking/new-test/media icons/icons8-whatsapp-48.png" alt=""></a>
+                    <a href="#" aria-label="Facebook"><img src="/Webbutvelking/new-test/media icons/icons8-linkedin-circled-48.png" alt=""></a>
+                </section>
+            </section>
+            <section class="listContainer">
+                <ul class="list-holder">
+                    <li class="list-name">MEDARBETARE</li>
+                    <li><a href="/anställda-sidor/mia-ferdag.html">Mia Verdag</a></li>
+                    <li><a href="/anställda-sidor/Johanna-Gothaberg.html">Johanna Gothaberg</a></li>
+                    <li><a href="/anställda-sidor/Markus.html">Markus Nordhamn</a></li>
+                    <li><a href="/anställda-sidor/Christopher.html">Christophar Nollan</a></li>
+                </ul>
+                <ul class="list-holder">
+                    <li class="list-name">VERKSAMHETSOMRÅDEN</li>
+                    <li><a href="/undersidor/forsvarare.html">Försvarare-brottmål</a></li>
+                    <li><a href="/undersidor/Målsägandebiträde.html">Målsägandebiträde</a></li>
+                    <li><a href="/undersidor/familjerätt.html">Familjerätt och socialrätt</a></li>
+                </ul>
+                <ul class="list-holder">
+                    <li class="list-name">LÄNKAR</li>
+                    <li><a href="#">Om byrån</a></li>
+                    <li><a href="/contact-sida/contact.html">Kontakt</a></li>
+                    <li><a href="#">Uppdragsvillkor</a></li>
+                    <li><a href="#">Cookiepolicy</a></li>
+                </ul>
+                <ul class="list-holder">
+                    <li class="list-name">Contact</li>
+                    <li><a href="#">Minörgatan 30-36
+                        252 22 Helsingborg</a></li>
+                    <li><a href="+46 765432876">+46 765432876</a></li>
+                    <li><a href="+46 701768970">+46 701768970</a></li>
+                    <li><a href="advokat@kashef.se">advokat@kashef.se</a></li>
+                </ul>
+            </section>
+        </article>
+    </aside>
+    <footer>
+        <section id="foot">
+            <h5>Laborationsuppgift moment 2.2 för kursen DT068G, Webbanvändbarhet.</h5>
+            <p>© Copyright Mohamed Abokashef, 2023</p>
+        </section>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="main01.js"></script>
+</body>
+
+</html>

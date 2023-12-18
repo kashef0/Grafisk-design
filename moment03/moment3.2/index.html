@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="bilder/favicon2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,700;0,900;1,100;1,300&family=Source+Sans+3:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>WORLD WIDE</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo"><a href="index.html"><img src="bilder/logo.svg" alt="World wide logo"></a></h1>
+        <button class="menu-btn open" id="open-menu" aria-label="menu burger">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <nav id="nav-menu">
+            <button class="menu-btn clase" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">stäng</span>
+            </button>
+            <ul>
+                <li><a href="#">Startsida</a></li>
+                <li><a id="section1" href="#section2">Om oss</a></li>
+                <li><a href="#">Utbildningar</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <video autoplay muted loop id="myVideo">
+            <source src="video/New-Video1.mp4" type="video/mp4">
+            <source src="video/New-Video1.webm" type="video/webm">
+            Your browser does not support HTML5 video.
+        </video>
+        <article id="column-one" class="column">
+            <figure class="content-two last-img">
+                <figcaption>
+                    <h3>Beskriv på webbsidan vilken teknik du använt för att infoga videobakgrunden med HTML/CSS.</h3>
+                    <p class="thirdText">
+                        jag använde "video-elemente" för att skapa en HTML-videospelare på webbsidan och sedan använde autoplay attribute
+                        för att strta video när wbbsidan <span id="dots1"></span><span id="more1">
+                        laddas, muted stänger ljudet på filmen och loop kommer filmen att upprepas varje gång filmen slutar.
+                        </span><a onclick="readMoreText()" id="myBtn1">Läs mer...</a>
+                    </p>
+
+                    <p>
+                        Jag använde "source-elementen" för att definiera källfilerna för filmen i olika format. om webbläsare stöder inte
+                        någon av dessa format som jag definierade kommer webbläsare att visa texten "Your browser does not support HTML5
+                        video."
+                    </p>
+
+                    <h3>Exempel på koden:</h3>
+                    <ul class="list">
+                        <li>src="video/New-Video1.mp4": Källa i MP4-format.</li>
+                        <li>type="video/mp4":  filtypen för MP4. </li>
+                        <li>src="video/New-Video1.webm": Källa i WebM-format.</li>
+                        <li>type="video/webm": filtypen för WebM.</li>
+                    </ul>
+                    <p>
+                        I det här steget använde jag css för att placera filmen i bakgrund av webbsidan. jag började med "position: fixed"
+                        för att sätta filmen i en fast position på skärmen och sedan använde jag "right: 0; och bottom: 0;" för att placera
+                        filmen i det ndre högra görnet av webbsidan.
+                    </p>
+                    <p class="thirdText">
+                        min-"width: 100%; och min-height: 100%;" och gör filmen responsiv genom att täcker hela sidans bredd och höjd.
+                        filter: opacity(0.4); det gör filmen lite transparent för att skapa en delvis genomskinlig effekt som inte helt
+                        blockerar det underliggande innehållet på webbsidan.
+                    </p>
+                    <p>
+                        jag kan säga att det finns många webbsidor som kan hjälper till under den här uppgiften men jag använde två
+                        webbplatser som jag kan säga att dem är mina bästa vän. Den första är <a href="https://www.w3schools.com/howto/howto_css_fullscreen_video.asp">W3schools</a> 
+                        och den andra är <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">developer-mozilla.</a>
+                    </p>
+                </figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer>
+        <section id="foot">
+            <h5>Laborationsuppgift moment 3.1 för kursen DT068G, Grafisk Desgin För Webb.</h5>
+            <p>© Copyright Mohamed Abokashef, 2023</p>
+        </section>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
