@@ -24,6 +24,7 @@ header {
     background-color: 	#4682B4;
 }
 
+
 header .search-btn:hover {
     background: #ccc;
 }
@@ -87,6 +88,16 @@ h1 img {
     top: 5px;
     
 }
+
+
+.cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 20px;
+}
+
+
 
 
 

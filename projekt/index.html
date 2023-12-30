@@ -20,42 +20,51 @@
 
 <body>
     <header>
-        <section class="header-section">
-            <h1 class="logo"><a href="index.html"><img src="bilder/logo.svg" alt="World wide logo"></a></h1>
-            <form class="lang-switcher">
-                <label for="lang-switch">
-                    <a class="earth-icon" href="#"><i class="fa-light fa-globe fa-beat-fade"></i></a>
-                </label>
-                <select id="lang-switch">
-                    <option value="sv" selected>Sv</option>
-                    <option value="en">En</option>
-                </select>
-            </form>
-        </section>
-        <button class="menu-btn open" id="open-menu">
-            <span class="menu-icon">
-                <span class="bars"></span>
-                <span class="bars"></span>
-                <span class="bars"></span>
-            </span>
-            <span class="menu-text">Meny</span>
-        </button>
-        <nav id="nav-menu">
-            <button class="menu-btn clase" id="close-menu">
-                <span class="menu-icon">
-                    <span class="bars cross1"></span>
-                    <span class="bars cross2"></span>
-                </span>
-                <span class="menu-text">stäng</span>
-            </button>
-            <ul>
-                <li><a href="#">Startsida</a></li>
-                <li><a id="section1" href="#section2">Om oss</a></li>
-                <li><a href="#">Utbildningar</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
+        <ul class="cart">
+            <li><a href="#" class="search"><i class="fa fa-search"></i></a></li>
+            <li><button class="your-cart js-toggle-cart" data-item-num="3">Your Cart <i class="fa fa-lg fa-shopping-cart"></i></button></li>
+        </ul>
     </header>
+    <header>
+            <section class="header-section">
+                <h1 class="logo"><a href="index.html"><img src="bilder/logo.svg" alt="World wide logo"></a></h1>
+                <form class="lang-switcher">
+                    <label for="lang-switch">
+                        <a class="earth-icon" href="#"><i class="fa-light fa-globe fa-beat-fade"></i></a>
+                    </label>
+                    <select id="lang-switch">
+                        <option value="sv" selected>Sv</option>
+                        <option value="en">En</option>
+                    </select>
+                </form>
+            </section>
+            <button class="menu-btn open" id="open-menu">
+                <span class="menu-icon">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu-text">Meny</span>
+            </button>
+            <nav id="nav-menu">
+                <button class="menu-btn clase" id="close-menu">
+                    <span class="menu-icon">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menu-text">stäng</span>
+                </button>
+                <ul>
+                    <li><a href="#">Startsida</a></li>
+                    <li><a id="section1" href="#section2">Om oss</a></li>
+                    <li><a href="#">Utbildningar</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+    </header>
+        
+
+
     <main>
         <figure class="slideshow-container">
             <section class="mySlides fade">
