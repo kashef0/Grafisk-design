@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inloggnings- och registreringsformulär</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="./nya-varor/B-logo.png">
+</head>
+
+<body>
+    <div class="container">
+        <fieldset class="login form">
+            <header>Login</header>
+            <form action="#">
+                <label for="e-postadress">Ange din e-postadress:</label>
+                <input type="text" placeholder="Ange din e-postadress" id="e-postadress">
+                <label for="password">Ange ditt lösenord:</label>
+                <input type="password" id="password" placeholder="Ange ditt lösenord">
+                <a href="#">Glömt ditt lösenord?</a>
+                <label for="login" style="display: none;">login</label>
+                <input type="button" id="login" class="button" value="Login">
+            </form>
+            <form>
+                <header class="othersMetoder">Eller login med</header>
+                <label style="display: none;" for="bankid">bankid</label>
+                <input type="button" class="button bankid" id="bankid" value="BankID">
+                <label style="display: none;" for="Gmail">Gmail</label>
+                <input type="button" class="button gmail" id="Gmail" value="Gmail">
+            </form>
+            <section class="signup">
+                <h4 class="signup">Har du inget konto?</h4>
+                <p id="bli-medlem">Bli Medlem</p>
+            </section>
+        </fieldset>
+        <fieldset class="registration form">
+            <header>Bli Medlem</header>
+            <form action="#">
+                <label for="e-mail">Ange din e-postadress:</label>
+                <input type="text" id="e-mail" placeholder="Ange din e-postadress">
+                <label for="passwords">Skapa ett lösenord:</label>
+                <input type="password" id="passwords" placeholder="Skapa ett lösenord">
+                <label for="password2">Bekräfta ditt lösenord:</label>
+                <input type="password" id="password2" placeholder="Bekräfta ditt lösenord">
+                <label style="display: none;" for="Medlem">Bli Medlem</label>
+                <input type="button" id="Medlem" class="button" value="Bli Medlem">
+            </form>
+            <section class="signup">
+                <h4 class="signup">Har du redan ett konto?</h4>
+                <p id="loginKlick">Login</p>
+            </section>
+        </fieldset>
+    </div>
+    <section>
+        <h2><a id="startSida" href="project.html">Gå tillbaka till Startsida</a></h2>
+    </section>
+    
+    <script>
+            let openBtn = document.getElementById("bli-medlem");
+            let closeBtn = document.getElementById("loginKlick");
+
+
+            openBtn.addEventListener('click', toggleMenu);
+            closeBtn.addEventListener('click', toggleMenu);
+
+            function toggleMenu() {
+                let navMenuEl = document.getElementsByClassName("registration")[0];
+                let navMenuEl2 = document.getElementsByClassName("login")[0];
+
+                let style = window.getComputedStyle(navMenuEl);
+
+                if (style.display === "none") {
+                    navMenuEl.style.display = "block";
+                    navMenuEl2.style.display = "none";
+                } else {
+                    navMenuEl.style.display = "none";
+                    navMenuEl2.style.display = "block";
+                }
+            }
+
+    </script>
+</body>
+
+</html>

@@ -7,40 +7,42 @@
     <meta name="keywords" content="kosmetika, kvinnor, hudvård, makeup, hårvård, dofter, nagelvård">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="project.css">
-    <title>Document</title>
+    <link rel="icon" href="./nya-varor/B-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,700;0,900;1,100;1,300&family=Source+Sans+3:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js" defer></script>
+    <title>Beauty</title>
 </head>
 <body>
     <header class="headerOne">
         <section class="header-section">
-            <h1 class="logo"><a href="index.html"><img src="bilder/logo.svg" alt="World wide logo"></a></h1>
-            <!-- <form class="lang-switcher">
-                <label for="lang-switch">
-                    <a class="earth-icon" href="#"><i class="fa-light fa-globe fa-beat-fade"></i></a>
-                </label>
-                <select id="lang-switch">
-                    <option value="sv" selected>Sv</option>
-                    <option value="en">En</option>
-                </select>
-            </form> -->
+            <h1 class="logo"><a href="project.html"><img src="./nya-varor/logoo.svg" alt="beauty logo"></a></h1>
         </section>
         <section id="search">
-            <h2 style="display: none;">s</h2>
+            <h2 style="display: none;">sök, login och kundvagn</h2>
             <form class="search-engine">
-                <input type="text" placeholder="Search..." name="search">
-                <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" id="search-motorOne" placeholder="Search..." name="search">
+                <label class="search-btn" for="search-motorOne"><i class="fa-solid fa-magnifying-glass"></i>Sök</label>
             </form>
             <ul class="vagn list-inline">
                 <!-- <li><a id="searchBtn" href="#" class="search"><i class="fa fa-search"></i></a></li> -->
-                <li><a href="#" class="account">Login</a></li>
-                <li><button id="carBtn" class="your-cart js-toggle-cart" data-item-num="3">Your Cart <i
+                <li><a href="login.html" class="account">Login</a></li>
+                <li><button id="carBtn" class="your-cart js-toggle-cart" data-item-num="3">Din vagn <i
                     class="fa fa-lg fa-shopping-cart"></i></button></li>
             </ul>
         </section>
     </header>
     <header class="site-header">
         <form class="second-motor search-engine">
-            <input type="text" placeholder="Search..." name="search">
-            <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="text" id="search-motorTwo" placeholder="Search..." name="search">
+            <label class="search-btn" for="search-motorTwo"><i class="fa-solid fa-magnifying-glass">Sök</i></label>
         </form>
         <button class="menu-btn open" id="open-menu">
             <span class="menu-icon">
@@ -58,75 +60,137 @@
                 </span>
                 <span class="menu-text">stäng</span>
             </button>
-            <ul>
+            <ul class="column-orderNav">
                 <li><a href="#">Startsida</a></li>
-                <li><a id="section1" href="#section2">Om oss</a></li>
-                <li><a href="#">Utbildningar</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a id="section1" href="om-beauty.html">Om oss</a></li>
+                <li><a href="#">Kategori</a></li>
+                <li><a href="#">kundservice</a></li>
             </ul>
         </nav>
     </header>
     <hr class="site-toolbar">
-    <div class="cart">
-        <div class="inner-wrap">
-            <h2>Your Cart</h2>
-            <table class="cart-table">
-                <thead>
-                    <tr>
-                        <th class="product-remove">Remove Items</th>
-                        <th class="product-name">Product</th>
-                        <th class="product-price">Price</th>
-                        <th class="product-quantity">Quantity</th>
-                        <th class="product-line-total">Subtotal</th>
-                    </tr>
-                </thead>
-                <!-- pattern="\d*" -->
-                <tbody>
-                    <tr id="product-camera">
-                        <td><button type="button" class="product-remove" data-id="product-camera"><i
-                                    class="fa fa-times"></i></button></td>
-                        <td>Camera</td>
-                        <td class="product-price" data-price="3.99">3.99</td>
-                        <td class="product-quantity">
-                            <input type="number" step="1" min="1" max="5" value="1" data-id="product-camera">
-                            <button class="plus js-number-control">
-                                <i class="fa fa-plus-square"></i>
-                            </button>
-                            <button class="minus js-number-control">
-                                <i class="fa fa-minus-square"></i>
-                            </button>
-                        </td>
-                        <td class="product-line-total" id="product-camera-total" data-line-total="3.99">3.99</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+    <figure class="slideshow-container">
+        <section class="mySlides fade">
+            <h5 class="numbertext">1 / 7</h5>
+            <picture>
+                <source srcset="./olika-storlek/stor-bakgrund.jpg" media="(min-width: 1920px)">
+                <source srcset="./olika-storlek/mellan-bakgrund.jpg" media="(min-width: 801px) and (max-width: 1024px)">
+                <source srcset="./olika-storlek/small-bakgrund.jpg" media="(max-width: 800px)">
+                <img src="./olika-storlek/stor-backgrund.webp" alt="MDN">
+            </picture>
+            <!-- <img src="bilder/New1.webp"> -->
+            <p class="text">Upptäck våra produkter gjorda av de bästa naturliga materialen för din hudhälsar</p>
+        </section>
+    
+        <section class="mySlides fade">
+            <h5 class="numbertext">2 / 7</h5>
+            <picture>
+                <source srcset="./olika-storlek/1920newbak.jpg" media="(min-width: 1920px)">
+                <source srcset="./olika-storlek/1024newbak.jpg" media="(min-width: 801px) and (max-width: 1024px)">
+                <source srcset="./olika-storlek/800newbak.jpg" media="(max-width: 800px)">
+                <img src="./olika-storlek/1920newbak.webp" alt="MDN">
+            </picture>
+            <p class="text">Välj den produkt som passar dina dagliga behov</p>
+        </section>
+    
+        <section class="mySlides fade">
+            <h5 class="numbertext">3 / 7</h5>
+            <picture>
+                <source srcset="./olika-storlek/1920mascara.jpg" media="(min-width: 1920px)">
+                <source srcset="./olika-storlek/1024mascara.jpg" media="(min-width: 801px) and (max-width: 1024px)">
+                <source srcset="./olika-storlek/800mascara.jpg" media="(max-width: 800px)">
+                <img src="./olika-storlek/1920mascara.webp" alt="MDN">
+            </picture>
+            <p class="text">Beauty Roar Flawless Look Face Palette
+            </p>
+        </section>
+        <section class="mySlides fade">
+            <h5 class="numbertext">4 / 7</h5>
+            <picture>
+                <source srcset="./olika-storlek/1920ritual-stor.jpg" media="(min-width: 1920px)">
+                <source srcset="./olika-storlek/1024ritual-mellan.jpg" media="(min-width: 801px) and (max-width: 1024px)">
+                <source srcset="./olika-storlek/800ritual-small.jpg" media="(max-width: 800px)">
+                <img src="./olika-storlek/1920ritual-stor.webp" alt="MDN">
+            </picture>
+            <p class="text">
+                fördelarna med vår exklusiva handbalsam och kroppskräm, skapade för att ge din hud omsorg och näring den förtjänar.
+            </p>
+        </section>
+        <section class="mySlides fade">
+            <h5 class="numbertext">5 / 7</h5>
+            <picture>
+                <source srcset="./olika-storlek/1920kiko.jpg" media="(min-width: 1920px)">
+                <source srcset="./olika-storlek/1024kiko.jpg" media="(min-width: 801px) and (max-width: 1024px)">
+                <source srcset="./olika-storlek/800kiko.jpg" media="(max-width: 800px)">
+                <img src="./olika-storlek/1920kiko.webp" alt="MDN">
+            </picture>
+            <p class="text">Kiko hjälper till att dölja mörka ringar och återfuktar huden</p>
+        </section>
+        <section class="mySlides fade">
+            <h5 class="numbertext">6 / 7</h5>
+            <picture>
+                <source srcset="./olika-storlek/1920florence2__.jpg" media="(min-width: 1920px)">
+                <source srcset="./olika-storlek/1024florence2__.jpg" media="(min-width: 801px) and (max-width: 1024px)">
+                <source srcset="./olika-storlek/800florence2__.jpg" media="(max-width: 800px)">
+                <img src="./olika-storlek/1920florence2__.webp" alt="MDN">
+            </picture>
+            <p class="text">Omskapa ansiktsformen med hjälp av Florence Organic Body Cream, berikad med elastin, ceramider
+                och marint kollagen för att omstrukturera hudens arkitektur.
+            </p>
+        </section>
+        <section class="mySlides fade">
+            <h5 class="numbertext">7 / 7</h5>
+            <picture>
+                <source srcset="./olika-storlek/1920__florence.jpg" media="(min-width: 1920px)">
+                <source srcset="./olika-storlek/1024florence__.jpg" media="(min-width: 801px) and (max-width: 1024px)">
+                <source srcset="./olika-storlek/800florence__.jpg" media="(max-width: 800px)">
+                <img src="./olika-storlek/1920florence__.webp" alt="MDN">
+            </picture>
+            <p class="text">Florence Organic Face Cream med snigelslem
+                återfuktar huden på djupet, medan kollagen bibehåller sin elasticitet och ton
+            </p>
+        </section>
+        
+        <button type="button" aria-label="preveuos image" class="prev" onclick="plusSlides(-1)">❮</button>
+        <button type="button" aria-label="next image" class="next" onclick="plusSlides(1)">❯</button>
+    
+    </figure>
+    <section class="treDots">
+        <h2 style="display: none;">Dots slide show pictures</h2>
+        <span class="point" onclick="currentSlide(1)"></span>
+        <span class="point" onclick="currentSlide(2)"></span>
+        <span class="point" onclick="currentSlide(3)"></span>
+        <span class="point" onclick="currentSlide(4)"></span>
+        <span class="point" onclick="currentSlide(5)"></span>
+        <span class="point" onclick="currentSlide(6)"></span>
+        <span class="point" onclick="currentSlide(7)"></span>
+    </section>
     <aside class="filter-grid">
         <section class="inner-row">
             <h2 style="display: none;">s</h2>
             <article class="filter-cell">
                 <h2 style="display: none;">s</h2>
-                <label for="category-select">Category:</label>
+                <label for="category-select">Kategori:</label>
                 <select id="category-select" class="form-control">
-                    <option value="*">Select a category</option>
-                    <option value="fav">Favorites</option>
+                    <option value="*">Välj en kategori</option>
+                    <option value="fav">Favoriter</option>
                 </select>
             </article>
             <article class="filter-cell">
                 <h2 style="display: none;">s</h2>
-                <label for="product-type-select">Product Type:</label>
+                <label for="product-type-select">Produkttyp:</label>
                 <select id="product-type-select" class="form-control">
-                    <option value="*">Select a product type</option>
-                    <option value="square">Square</option>
-                    <option value="circular">Circular</option>
+                    <option value="*">Välj en produkttyp</option>
+                    <option value="square">Parfymer</option>
+                    <option value="circular">Krämer</option>
+                    <option value="circular">Kosmetika</option>
                 </select>
             </article>
             <article class="filter-cell">
                 <h2 style="display: none;">s</h2>
-                <label for="price-select">Price:</label>
+                <label for="price-select">Pris:</label>
                 <select id="price-select" class="form-control">
-                    <option>Select a price range</option>
+                    <option>Välj en prisklass</option>
                     <option>50kr - 200kr</option>
                     <option>250kr - 500kr</option>
                     <option> mer än 500kr</option>
@@ -134,9 +198,12 @@
             </article>
             <article class="filter-cell">
                 <h2 style="display: none;">s</h2>
-                <label for="brand-select">Brand:</label>
+                <label for="brand-select">varumärke:</label>
                 <select id="brand-select" class="form-control">
-                    <option>Select a brand</option>
+                    <option>Välj ett varumärke</option>
+                    <option>Kiko</option>
+                    <option>Ritual</option>
+                    <option>Florence</option>
                 </select>
             </article>
         </section>
@@ -144,83 +211,100 @@
     <section class="products">
         <h2 style="display: none;">s</h2>
         <article class="product">
-            <h2 style="display: none;">s</h2>
+            <h2 style="display: none;">product 1</h2>
             <figure class="product-image">
-                <img src="./img/iphone-13.jpg" alt="iPhone 13">
+                <a href="./img550/kikocream800.jpg" target="_blank" data-lightbox="products"><img src="./nya-varor/300_300kikofram.png" alt="Daily Protection Bb Cream"></a>
             </figure>
             <section class="product-details">
-                <h2 class="product-name"><span>Product:</span> iPhone 13</h2>
-                <p class="product-description"><span>Description:</span> iPhone 13 features a cinema standard wide color
-                    gamut, displaying colors just as filmmakers intended.</p>
-                <p class="product-price"><span>Price:</span> 1199 $</p>
+                <h2 class="product-name" onclick='window.location.href = "kikoprodukt.html"'>Daily Protection Bb Cream Spf 30</h2>
+                <p class="product-description"><span>Beskrivning:</span> Färgad kräm för att skydda, perfekta och återfukta huden
+                    Daily Protection Bb Cream Spf 30.</p>
+                <p class="product-price"><span>Pris:</span> 330 kr</p>
                 <p class="product-add-to-cart">
-                    <a href="#0" class="button see-more">More Details</a>
-                    <a href="#0" class="button add-to-cart" data-id="0">Add to Cart</a>
+                    <a href="kikoprodukt.html" class="button see-more">Mer detaljer</a>
+                    <a href="#" class="button add-to-cart" data-id="0">Lägg till i kundvagn</a>
                 </p>
             </section>
         </article>
         <article  class="product">
-            <h2 style="display: none;">s</h2>
+            <h2 style="display: none;">product 2</h2>
             <figure  class="product-image">
-                <img src="./img/iphone-pro-max.jpg" alt="iPhone 13 Pro Max">
+                <a href="./img550/parfyn800.jpg" target="_blank" data-lightbox="products"><img src="./nya-varor/300_300parfym02.png" alt="Ritual parfym"></a>
             </figure >
             <section class="product-details">
-                <h2 class="product-name"><span>Product:</span> iPhone 13 Pro Max</h2>
-                <p class="product-description"><span>Description:</span> Apple iPhone 13 Pro Max ; CPU, Hexa-core (2x3.22 GHz
-                    Avalanche + 4xX.X GHz Blizzard) ; GPU, Apple GPU (5-core graphics) ; Memory, Card slot ; Internal, 128GB 6GB
+                <h2 class="product-name" onclick='window.location.href = "ritualparfym.html"'>Travel - Fleurs de l’Himalaya</h2>
+                <p class="product-description"><span>Beskrivning:</span> Denna framstående parfym från Blommornas dal målar ett porträtt
+                    av en subtil vind som tyst blåser genom Himalayabergens fridfulla landskap i det heliga Tibet.
                 </p>
-                <p class="product-price"><span>Price:</span> 1999 $</p>
+                <p class="product-price"><span>Pris:</span> 370 kr</p>
                 <p class="product-add-to-cart">
-                    <a href="#0" class="button see-more">More Details</a>
-                    <a href="#0" class="button add-to-cart" data-id="1">Add to Cart</a>
-                </p>
-            </section>
-        </article >
-        <article  class="product">
-            <h2 style="display: none;">s</h2>
-            <figure  class="product-image">
-                <img src="./img/macbook-air.jpg" alt="Macbook Air">
-            </figure >
-            <section class="product-details">
-                <h2 class="product-name"><span>Product:</span> Macbook Air</h2>
-                <p class="product-description"><span>Description:</span> The M1 chip and macOS Monterey work together to make
-                    the entire system snappier. MacBook Air wakes instantly from sleep</p>
-                <p class="product-price"><span>Price:</span> 1499 $</p>
-                <p class="product-add-to-cart">
-                    <a href="#0" class="button see-more">More Details</a>
-                    <a href="#0" class="button add-to-cart" data-id="2">Add to Cart</a>
+                    <a href="ritualparfym.html" class="button see-more">Mer detaljer</a>
+                    <a href="#" class="button add-to-cart" data-id="1">Lägg till i kundvagn</a>
                 </p>
             </section>
         </article >
         <article  class="product">
-            <h2 style="display: none;">s</h2>
+            <h2 style="display: none;">product 3</h2>
             <figure  class="product-image">
-                <img src="./img/macbook.jpg" alt="Macbook">
+                <a href="./img550/florenceface800.jpg" target="_blank" data-lightbox="products"><img src="./nya-varor/300_florence.png" alt="Florence Organic Face Cream med snigelslem"></a>
             </figure >
             <section class="product-details">
-                <h2 class="product-name"><span>Product:</span> Macbook</h2>
-                <p class="product-description"><span>Description:</span> The MacBook Air was among the first of Apple's Macs
-                    to make the transition to Apple silicon.</p>
-                <p class="product-price"><span>Price:</span> 999 $</p>
+                <h2 class="product-name" onclick='window.location.href = "florence02produkt.html"'>Florence Organic Face Cream med snigelslem</h2>
+                <p class="product-description"><span>Beskrivning:</span> Florens ekologisk ansiktskräm med snigelslem med hyaluronsyra,
+                    ekologiskt gojiextrakt och ekologiskt damaskrosvatten</p>
+                <p class="product-price"><span>Pris:</span> 280 kr</p>
                 <p class="product-add-to-cart">
-                    <a href="#0" class="button see-more">More Details</a>
-                    <a href="#0" class="button add-to-cart" data-id="3">Add to Cart</a>
+                    <a href="florence02produkt.html" class="button see-more">Mer detaljer</a>
+                    <a href="#" class="button add-to-cart" data-id="2">Lägg till i kundvagn</a>
                 </p>
             </section>
         </article >
         <article  class="product">
-            <h2 style="display: none;">s</h2>
+            <h2 style="display: none;">product 4</h2>
             <figure  class="product-image">
-                <img src="./img/ipad.jpg" alt="iPad 11inch">
+                <a href="./img550/florencebody800.jpg" target="_blank" data-lightbox="products"><img src="./nya-varor/300florence2.png" alt="Florence Organic body Cream"></a>
             </figure >
             <section class="product-details">
-                <h2 class="product-name"><span>Product:</span> iPad 11inch</h2>
-                <p class="product-description"><span>Description:</span> The iPad is Apple's most affordable and most popular
-                    tablet, and the ninth-generation model features the A13 Bionic chip.</p>
-                <p class="product-price"><span>Price:</span> 599 $</p>
+                <h2 class="product-name" onclick='window.location.href = "florenceprodukt.html"'>Florence Organic body Cream</h2>
+                <p class="product-description"><span>Beskrivning:</span> Florens ekologisk ansiktskräm med retinol och hyaluronsyra med
+                    låg- och medelmolekylvikt hyaluronsyra, vitamin A, C, E, jojobaolja och ekologisk aloe vera..
+                </p>
+                <p class="product-price"><span>Pris:</span> 180 kr</p>
                 <p class="product-add-to-cart">
-                    <a href="#0" class="button see-more">More Details</a>
-                    <a href="#0" class="button add-to-cart" data-id="4">Add to Cart</a>
+                    <a href="florenceprodukt.html" class="button see-more">Mer detaljer</a>
+                    <a href="#" class="button add-to-cart" data-id="3">Lägg till i kundvagn</a>
+                </p>
+            </section>
+        </article >
+        <article  class="product">
+            <h2 style="display: none;">product 5</h2>
+            <figure  class="product-image">
+                <a href="./img550/mascara800.jpg" target="_blank" data-lightbox="products"><img src="./nya-varor/300mascara.png" alt="Beauty Roar Flawless Look Face Palette"></a>
+            </figure >
+            <section class="product-details">
+                <h2 class="product-name" onclick='window.location.href = "kikoroar.html"'>Beauty Roar Flawless Look Face Palette</h2>
+                <p class="product-description"><span>Beskrivning:</span> Trio ansiktspalett som består av rouge, highlighter med
+                    specialeffekt och bronzer.</p>
+                <p class="product-price"><span>Pris:</span> 300 kr</p>
+                <p class="product-add-to-cart">
+                    <a href="kikoroar.html" class="button see-more">Mer detaljer</a>
+                    <a href="#" class="button add-to-cart" data-id="4">Lägg till i kundvagn</a>
+                </p>
+            </section>
+        </article >
+        <article  class="product">
+            <h2 style="display: none;">product 6</h2>
+            <figure  class="product-image">
+                <a href="./img550/Neritual550.jpg" target="_blank" data-lightbox="products"><img src="./nya-varor/300ritual.png" alt="iPad 11inch"></a>
+            </figure >
+            <section class="product-details">
+                <h2 class="product-name" onclick='window.location.href = "ritualprodukt.html"'>Handbalsam kroppskräm</h2>
+                <p class="product-description"><span>Beskrivning:</span> Massera försiktigt dina händer och nagelband varje dag med
+                    balsam för återfuktning och näring.</p>
+                <p class="product-price"><span>Pris:</span> 150 kr</p>
+                <p class="product-add-to-cart">
+                    <a href="ritualprodukt.html" class="button see-more">Mer detaljer</a>
+                    <a href="#" class="button add-to-cart" data-id="5">Lägg till i kundvagn</a>
                 </p>
             </section>
         </article >
@@ -231,7 +315,7 @@
             <section class="topContent">
                 <figure class="logoInfo">
                     <h3 style="display: none;">s</h3>
-                    <a class="logo_name" href="index.html"><img src="bilder/logo.svg" alt="Y-TAXI logo"></a>
+                    <a class="logo_name" href="#"><img src="./nya-varor/logoo.svg" alt="beauty logo"></a>
                 </figure>
                 <section class="socialMedia-icons">
                     <h3 style="display: none;">s</h3>
@@ -245,8 +329,9 @@
                 <h3 style="display: none;">s</h3>
                 <ul class="list-holder">
                     <li class="list-name">LÄNKAR</li>
-                    <li><a href="#">Om Y-TAXI</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="om.html">Om Mig</a></li>
+                    <li><a href="om-beauty.html">Om Beauty</a></li>
+                    <li><a href="#">kundservice</a></li>
                     <li><a href="regler.html">regler och villkor</a></li>
                     <li><a href="information.html">tillgänglighetsredogörelse</a></li>
                 </ul>
@@ -256,7 +341,7 @@
                         252 22 Helsingborg</a></li>
                     <li><a href="#">+46 765432876</a></li>
                     <li><a href="#">+46 701768970</a></li>
-                    <li><a href="#">Y-TAXI@kashef.se</a></li>
+                    <li><a href="#">beauty@kashef.se</a></li>
                 </ul>
                 <form class="feedback_comments" action="URL-to-form-script" method="POST">
                     <fieldset class="feedback">
@@ -282,8 +367,8 @@
         </section>
     </footer>
     
-    <script src="project.js"></script>
-    <script src="script.js"></script>
+    <script src="main.js"></script>
+    <script src="main01.js"></script>
 </body>
 
 </html>
